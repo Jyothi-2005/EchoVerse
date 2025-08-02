@@ -329,18 +329,24 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("""
-    *🤖 AI-Powered*  
-    Advanced text rewriting using state-of-the-art language models
-    """)
+    <div class="feature-card">
+        <h3>🤖 AI-Powered</h3>
+        <p>Advanced text rewriting using state-of-the-art language models</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col2:
     st.markdown("""
-    *📁 Multi-Format*  
-    Support for TXT and PDF file uploads for easy content processing
-    """)
+    <div class="feature-card">
+        <h3>📁 Multi-Format</h3>
+        <p>Support for TXT and PDF file uploads for easy content processing</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col3:
     st.markdown("""
-    *🎨 Customizable*  
-    Multiple tone options to match your desired narrative style
-    """)
+    <div class="feature-card">
+        <h3>🎨 Customizable</h3>
+        <p>Multiple tone options to match your desired narrative style</p>
+    </div>
+    """, unsafe_allow_html=True)
